@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1652224831481883268/9716D8186A21C14FE368F6CE9253C0DB9202117F/?imw=512&amp;imh=341&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true');
+  background-size: cover; /* Это гарантирует, что изображение покроет весь экран */
+  background-position: center center; /* Центрирует изображение по центру экрана */
+  background-attachment: fixed; /* Закрепляет фон при прокрутке */
+}
+
+  #canvas {
+    border: 5px solid  rgb(13, 143, 161 ) ;  /* Черная граница толщиной 5px */
+    border-radius: 15px;  
+    margin-top: -115px; 
+    margin-bottom: 50px;   /* Закругленные углы */
+}
+.h1{
+  margin: 0;
+  padding: 0;
+  color:rgb(42, 101, 126);
+  font-family: "Jaro", sans-serif;
+  font-size: 18px;
+  align-items: flex-start;
+  display: flex;
+  margin: 5px 0 0 5px;
+}
+h1{
+  margin: 0;
+}
+.score{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5px;
+  border: 5px solid  rgb(13, 143, 161 ) ;  /* Черная граница толщиной 5px */
+  border-radius: 15px;  
+  color:rgb(42, 101, 126);
+  font-family: "Jaro", sans-serif;
+  font-size: 25px; 
+  width: 200px; 
+  margin: 0px 5px 0px 280px;  /* Закругленные углы */
+}
+
+.button {
+  position: relative;
+  z-index: 10; /* Убедитесь, что кнопка не скрыта */
+}
+
+.start {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.5);
+  border: 5px solid  rgb(252, 179, 60) ;  /* Черная граница толщиной 5px */
+  border-radius: 35px;  
+  color:rgb(42, 101, 126);
+}
+
+.start:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color:rgb(27, 61, 76);
+  transform: scale(1.1);
+}
+
