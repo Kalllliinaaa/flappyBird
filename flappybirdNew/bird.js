@@ -15,6 +15,7 @@ export class Bird {
         this.reset();
         this.passedPipes = [];
         this.newPipeScore = 0;
+        this.pipe = main.pipe;
     }
     reset() {
         // Сброс состояния птицы
@@ -211,8 +212,10 @@ checkPipePass(birdResult) {
         // console.log({passedPipes: this.passedPipes})
         if (birdPassedHorizontal && birdPassedVertical) {
             // debugger
+            if(!this.pipe.passedPipes){
             this.main.score.update(); // Увеличиваем счет
-            this.passedPipes[i] = true; // Помечаем трубу как пройденную
+            this.pipe.passedPipes = true;
+            } // Помечаем трубу как пройденную
             console.log('Прошла через трубу!', birdPassedHorizontal, birdPassedVertical, pipe);
         }
     }
