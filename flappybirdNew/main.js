@@ -2,9 +2,9 @@ export class Main {
     constructor() {
         this.canvas = document.getElementById('canvas');
         this.ctx = this.canvas.getContext('2d');
+        this.pipe = new Pipe(this);
         this.bird = new Bird(this);
         this.fon = new Fon(this);
-        this.pipe = new Pipe(this);
         this.score = new Score(this);
         this.isGameOver = false;
         this.isGameRunning = false; // Флаг для отслеживания состояния игры
