@@ -41,6 +41,7 @@ export class Pipe {
     // Установим начальные значения для постоянного зазора
     this.gap = this.pipeBottomSourse.height * 0.40;
     this.constantGap = this.pipeBottomSourse.height + this.gap;
+    this.passedPipes = false;
 }
 reset() {
     this.column[0].x = this.main.canvas.width;
@@ -116,6 +117,7 @@ reset() {
                     y: Math.floor(Math.random() * (canvas.height - this.pipeTopSourse.height)) - this.pipeTopSourse.height,
                     width: this.pipeBottomSourse.width, // Добавляем ширину в объект колонки
                 });
+                this.passedPipes = false;
             }
         }
     
